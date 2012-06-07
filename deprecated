@@ -1,0 +1,22 @@
+//design04.Coordinate blackKingLocation = chessGame.findBlackKing();
+        //List<design04.Coordinate> BlackMoves = chessGame.getPiece(blackKingLocation).getValidMoves();
+        boolean blackCheckBool;
+        /*
+        for(design04.Coordinate newPos : BlackMoves) {
+            chessGame.movePiece(blackKingLocation,newPos);//move it to new position
+
+            blackCheckBool = blackIsInCheck();
+
+            chessGame.movePiece(newPos,blackKingLocation); // move it back in case we need to do more tests
+            if(!blackCheckBool){
+                return false;
+            }
+        }
+        */
+        // checks that the king has somewhere to move that does not put it in check
+
+        //Now - king has nowhere to move
+        //We see if it is in check atm
+        // If yes, we need to see if the check can be blocked by a valid move by another piece
+        //If no, we need to check there is a valid move available that does not put it in check
+        // if no valid moves that - checkmate (actually stalemate)
